@@ -85,6 +85,7 @@
     - Execute the following to add a few import lines
 
         ```bash
+        echo -e "from django.core.exceptions import ValidationError\nfrom django.db import IntegrityError" >> tests/test_cinema_app.py
         echo -e "from django.contrib.auth import get_user_model\nfrom django.test import TestCase\nfrom django.urls import reverse" >> tests/test_cinema_app.py
         ```
 
